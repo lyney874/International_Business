@@ -59,6 +59,15 @@
   <div class="container">
     <h1>Article</h1>
 
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Поиск по названию статьи..."
+      style="width: 100%; padding: 10px; margin: 20px 0; border-radius: 6px; border: none; font-size: 16px;"
+      onkeyup="searchArticles()"
+    />
+
     <div class="article-card">
       <h2><a href="articles/football.html">HoYoverse: How China Became Number One in the Industry</a></h2>
       <p>HoYoverse is a company you’ve definitely seen...</p>
@@ -66,12 +75,30 @@
 
     <div class="article-card">
       <h2><a href="articles/penis.html">3 essential skills for a career in international business</a></h2>
- <img src="foren.jpg" alt="Person studying with coffee and tablet" style="width: 100%; margin: 20px 0; border-radius: 8px;">
+      <img src="foren.jpg" alt="Person studying with coffee and tablet" style="width: 100%; margin: 20px 0; border-radius: 8px;">
       <p>1. Cross-cultural communication — You must understand and respect different cultures, rules, and communication styles.</p>
       <p>2. English (and other languages) — Language is the foundation of trust and successful negotiation.</p>
       <p>3. Flexibility & strategic thinking — The world changes fast. You need to spot trends and adapt quickly.</p>
     </div>
   </div>
+
+  <script>
+    function searchArticles() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const cards = document.getElementsByClassName("article-card");
+
+      for (let i = 0; i < cards.length; i++) {
+        const h2 = cards[i].getElementsByTagName("h2")[0];
+        const title = h2.textContent || h2.innerText;
+        if (title.toLowerCase().indexOf(filter) > -1) {
+          cards[i].style.display = "";
+        } else {
+          cards[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 
 </body>
 </html>
