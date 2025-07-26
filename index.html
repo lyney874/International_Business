@@ -37,10 +37,23 @@
 
     .article-card h2 {
       margin: 0;
+      color: #00bfff;
+      cursor: pointer;
     }
 
     .article-card p {
       color: #ccc;
+    }
+
+    .full-article {
+      display: none;
+      margin-top: 15px;
+    }
+
+    .full-article p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 1em;
     }
 
     a {
@@ -64,10 +77,31 @@
     </div>
 
     <div class="article-card">
-      <h2><a href="articles/football.html">HoYoverse: How China Became Number One in the Industry</a></h2>
+      <h2 onclick="toggleArticle()">HoYoverse: How China Became Number One in the Industry</h2>
       <p>HoYoverse is a company you’ve definitely seen...</p>
+
+      <div class="full-article" id="full-article">
+        <p>HoYoverse is a company you’ve definitely seen, even if you’ve never played their games. When they were just a small indie studio, they were called miHoYo, but now they’re the world-famous HoYoverse.</p>
+
+        <p>MiHoYo was founded in 2012 by three students. Starting with the development of the mobile game FlyMe2theMoon for iOS, they eventually built the Honkai universe, which led to their mega-hit: <strong>Genshin Impact</strong>.</p>
+
+        <p>In 2022, miHoYo rebranded as HoYoverse to unify all its products and ambitions into one virtual universe. Their games attract millions of players and generate billions in revenue.</p>
+
+        <p>Chinese game development has exploded. Tencent, NetEase, Lilith, Papergames, and HoYoverse lead the charge, influencing global trends and redefining the industry.</p>
+
+        <p>From gacha mechanics to world-class graphics, Chinese studios now set the bar. HoYoverse, in particular, has become the model of “what’s next” in gaming.</p>
+
+        <p><a href="#" onclick="toggleArticle()">← Скрыть статью</a></p>
+      </div>
     </div>
   </div>
+
+  <script>
+    function toggleArticle() {
+      const article = document.getElementById("full-article");
+      article.style.display = article.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
 </body>
 </html>
