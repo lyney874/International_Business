@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⏳International Business⏳</title>
+  <style>
+    body {
+      background: #121212;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      color: #00bfff;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+<h1>3 essential skills for a career in international business</h1>
+ <p>1. Cross-cultural communication You must understand and respect different cultures, rules, and communication styles.<p>
+ <p>2. English (and other languages) Language is the foundation of trust and successful negotiation.<p>
+ <p>3. Flexibility & strategic thinking The world changes fast. You need to spot trends and adapt quickly.<p>
